@@ -1,15 +1,29 @@
-<div>
-	<img src="/img/8bitavatar.png" width="100" height="100">
-	<h3>About Me</h3>
+<style type="text/css">
+
+.bgimg {
+    background-color:#000;
+	-moz-border-radius:10px;  /* for Firefox */
+	-webkit-border-radius:10px; /* for Webkit-Browsers */
+	border-radius:10px; /* regular */
+	padding:10px;
+}
+
+</style>
+
+<div class="bgimg">
+  <div>
+      <img src="/img/8bitavatar.png" width="100" height="100">
+      <h3 style="color:#999999">About Me</h3>
+  </div>
+  
+  <p style="color:#ffffff">Hey there! My name is Jon and I am a Senior software engineering student at UT Dallas.</p>
+  
+  <h3 style="color:#999999">Recent Posts</h3>
+  
+  <ul>
+    {% for post in site.posts limit: 5 %}
+      <li><a href="{{ post.url }}" width="71" height="55">{{ post.title }}</a></li>
+      <h5 style="color:#999999">{{ post.date | date_to_long_string }}</h5>
+    {% endfor %}
+  </ul>
 </div>
-
-<p>Hey there! My name is Jon and I am a Senior software engineering student at UT Dallas.</p>
-
-<h3>Recent Posts<h3>
-
-<ul>
-  {% for post in site.posts limit: 5 %}
-    <li><a href="{{ post.url }}" width="71" height="55">{{ post.title }}</a></li>
-	<h5 class="muted">{{ post.date | date_to_long_string }}</h5>
-  {% endfor %}
-</ul>
