@@ -5,7 +5,7 @@
 	-moz-border-radius:10px;  /* for Firefox */
 	-webkit-border-radius:10px; /* for Webkit-Browsers */
 	border-radius:10px; /* regular */
-	padding:10px;
+	padding:20px;
 }
 
 </style>
@@ -18,12 +18,8 @@
   
   <p style="color:#ffffff">Hey there! My name is Jon and I am a Senior software engineering student at UT Dallas.</p>
   
-  <h3 style="color:#999999">Recent Posts</h3>
-  
-  <ul>
-    {% for post in site.posts limit: 5 %}
-      <li><a href="{{ post.url }}" width="71" height="55">{{ post.title }}</a></li>
-      <h5 style="color:#999999">{{ post.date | date_to_long_string }}</h5>
-    {% endfor %}
-  </ul>
+  <div>
+  	<h3 style="color:#999999">Places I Hang Out</h3>
+    <a href="https://www.facebook.com/jon.darling.14" style="color:#ffffff"><i class="icon-facebook icon-3x" ></i></a> &nbsp <a href="https://twitter.com/coltex_" style="color:#ffffff"><i class="icon-twitter icon-3x" ></i></a> &nbsp <a href="https://plus.google.com/u/1/101931165081836655765/posts" style="color:#ffffff"><i class="icon-google-plus icon-3x" ></i></a> &nbsp <a href="https://github.com/coltex" style="color:#ffffff"><i class="icon-github icon-3x" ></i></a>
+  </div>
 </div>
