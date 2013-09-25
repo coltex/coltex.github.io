@@ -1,0 +1,29 @@
+
+/*Overrides the theming for the navigation bar.*/
+.navbar-inverse .navbar-inner {
+	background-color: #1b1b1b;
+	background-repeat: repeat-x;
+	border-color: #252525;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+	background-image: url(/img/escheresque_ste_@2X.png);
+}
+
+/*Background for the sidebar*/
+
+.sidebar-background {
+	background-image: url(/img/escheresque_ste_@2X.png);
+	-moz-border-radius:10px;  /* for Firefox */
+	-webkit-border-radius:10px; /* for Webkit-Browsers */
+	border-radius:10px; /* regular */
+	padding:20px;
+}
+
+/*Overrides the theming for the body.*/
+.body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-image:url(/img/gplaypattern.png);
+}
