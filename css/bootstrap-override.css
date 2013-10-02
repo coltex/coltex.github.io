@@ -1,17 +1,52 @@
 
+ @font-face { font-family: lobster; src: url(/img/Lobster_1_4.otf); } 
+
+.navbar-inverse .brand {
+	color: #FFFFFF;
+	font-family: lobster;
+	font-size: 30px;
+}
 /*Overrides the theming for the navigation bar.*/
 .navbar-inverse .navbar-inner {
-	background-color: #1b1b1b;
+	
+	background-color: #4881FF;
+	background-image: linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	background-image: -o-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	background-image: -moz-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	background-image: -webkit-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	background-image: -ms-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		right top,
+		color-stop(0.11, rgb(93,7,117)),
+		color-stop(0.52, rgb(8,0,13)),
+		color-stop(0.79, rgb(0,0,0))
+	);
 	background-repeat: repeat-x;
 	border-color: #252525;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
-	background-image: url(/img/escheresque_ste_@2X.png);
+  	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9900CC', endColorstr='#ff111111', GradientType=0);
 }
 
 /*Background for the sidebar*/
 
 .sidebar-background {
-	background-image: url(/img/escheresque_ste_@2X.png);
+	background-color: #4881FF;
+	background-image: linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	background-image: -o-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	background-image: -moz-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	background-image: -webkit-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	background-image: -ms-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		right top,
+		color-stop(0.11, rgb(93,7,117)),
+		color-stop(0.52, rgb(8,0,13)),
+		color-stop(0.79, rgb(0,0,0))
+	);
 	-moz-border-radius:10px;  /* for Firefox */
 	-webkit-border-radius:10px; /* for Webkit-Browsers */
 	border-radius:10px; /* regular */
