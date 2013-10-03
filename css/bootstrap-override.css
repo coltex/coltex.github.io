@@ -1,6 +1,7 @@
 
  @font-face { font-family: lobster; src: url(/img/Lobster_1_4.otf); } 
 
+/*Overrides the theming for the "brand"*/
 .navbar-inverse .brand {
 	color: #FFFFFF;
 	font-family: lobster;
@@ -52,6 +53,22 @@
 	border-radius:10px; /* regular */
 	padding:20px;
 }
+
+/*Header using the lobster font*/
+.lobster-header {
+	color: #FFFFFF;
+	font-family: lobster;
+	font-size: 30px;
+}
+
+/*Header using the lobster font, with some space underneath!*/
+.lobster-header-space {
+	color: #FFFFFF;
+	font-family: lobster;
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+
 
 /*Overrides the theming for the body.*/
 .body {
