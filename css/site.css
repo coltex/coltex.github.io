@@ -45,13 +45,6 @@ body, html { background-image: url(../img/furley_bg.png); }
     -webkit-backface-visibility: hidden;
 }
 
-#welcomeText {
-    color: #FFFFFF;
-    font-family: lobster;
-    font-size: 100px;
-    text-align:center;
-}
-
 /* Override bootstrap's tabs text */
 .nav > li > a {
     float: none;
