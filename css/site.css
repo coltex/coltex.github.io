@@ -1,15 +1,15 @@
 @charset "UTF-8";
 @font-face { font-family: lobster; src: url(../fonts/Lobster_1_4.otf); } 
 
-body,
-body body { background-image: url(../img/furley_bg.png); }
+body, html { background-image: url(../img/furley_bg.png); }
 
 #header {
 	color: #FFFFFF;
 	font-family: lobster;
 	font-size: 200px;
-  text-align:center;
-  text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+    text-align:center;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+    -webkit-backface-visibility: hidden;
 }
 
 #primary {  
@@ -35,12 +35,21 @@ body body { background-image: url(../img/furley_bg.png); }
 	border-radius:10px; /* regular */
   
   /* Shadow */
-  -moz-box-shadow: 10px 10px 55px 1px rgba(0,0,0,0.82);
-  -webkit-box-shadow: 10px 10px 55px 1px rgba(0,0,0,0.82);
-  box-shadow: 10px 10px 55px 1px rgba(0,0,0,0.82);
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,1);
+  box-shadow: 1px 1px 1px 0px rgba(0,0,0,1);
   
   /* Padding */
   padding: 10px;
+
+    -webkit-backface-visibility: hidden;
+}
+
+#welcomeText {
+    color: #FFFFFF;
+    font-family: lobster;
+    font-size: 100px;
+    text-align:center;
 }
 
 /* Override bootstrap's tabs text */
