@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@font-face { font-family: lobster; src: url(../fonts/Lobster_1_4.otf); } 
+
+body,
+body body { background-image: url(../img/furley_bg.png); }
+
+#header {
+	color: #FFFFFF;
+	font-family: lobster;
+	font-size: 200px;
+  text-align:center;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+#primary {  
+  background-color: #4881FF;
+	background-image: linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	background-image: -o-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	background-image: -moz-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	background-image: -webkit-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	background-image: -ms-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		right top,
+		color-stop(0.11, rgb(93,7,117)),
+		color-stop(0.52, rgb(8,0,13)),
+		color-stop(0.79, rgb(0,0,0))
+	);
+  
+  /* For rounding edges */
+	-moz-border-radius:10px;  /* for Firefox */
+	-webkit-border-radius:10px; /* for Webkit-Browsers */
+	border-radius:10px; /* regular */
+  
+  /* Shadow */
+  -moz-box-shadow: 10px 10px 55px 1px rgba(0,0,0,0.82);
+  -webkit-box-shadow: 10px 10px 55px 1px rgba(0,0,0,0.82);
+  box-shadow: 10px 10px 55px 1px rgba(0,0,0,0.82);
+  
+  /* Padding */
+  padding: 10px;
+}
+
+/* Override bootstrap's tabs text */
+.nav > li > a {
+    float: none;
+    line-height: 19px;
+    padding: 9px 10px 11px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    font-family: lobster;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.body-content { color: #FFFFFF; margin-top: 10px; }
+
+.tab-pane-content { margin-top: 10px; }
+
+.upper-margin { margin-top: 10px; }
+
+.get-it-links { text-align: center; }
