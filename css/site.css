@@ -64,3 +64,28 @@ body, html { background-image: url(../img/furley_bg.png); }
 .upper-margin { margin-top: 10px; }
 
 .get-it-links { text-align: center; }
+
+/* Override panel header */
+.panel-default>.panel-heading {
+    background-image: linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+    background-image: -o-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+    background-image: -moz-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+    background-image: -webkit-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+    background-image: -ms-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        right top,
+        color-stop(0.11, rgb(93,7,117)),
+        color-stop(0.52, rgb(8,0,13)),
+        color-stop(0.79, rgb(0,0,0)) );
+
+}
+
+/* Override panel title */
+.panel-title { text-align: center; color: #FFFFFF; }
+
+/* Override panel body */
+.panel-body { background-color: #000000
+}
