@@ -1,32 +1,20 @@
 @charset "UTF-8";
 @font-face { font-family: lobster; src: url(../fonts/Lobster_1_4.otf); } 
 
-body, html { background-image: url(../img/furley_bg.png); }
+body, html { background-image: url(../img/dark_mosaic.png); }
 
 #header {
 	color: #FFFFFF;
 	font-family: lobster;
-	font-size: 200px;
+	font-size: 150px;
     text-align:center;
-    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, .4);
     -webkit-backface-visibility: hidden;
 }
 
 #primary {  
-  background-color: #4881FF;
-	background-image: linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
-	background-image: -o-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
-	background-image: -moz-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
-	background-image: -webkit-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
-	background-image: -ms-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		right top,
-		color-stop(0.11, rgb(93,7,117)),
-		color-stop(0.52, rgb(8,0,13)),
-		color-stop(0.79, rgb(0,0,0))
+  background-color: #121212;
+
 	);
   
   /* For rounding edges */
@@ -63,29 +51,26 @@ body, html { background-image: url(../img/furley_bg.png); }
 
 .upper-margin { margin-top: 10px; }
 
-.get-it-links { text-align: center; }
+.check-it-out-link { color: #FFFFFF; }
 
 /* Override panel header */
-.panel-default>.panel-heading {
-    background-image: linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
-    background-image: -o-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
-    background-image: -moz-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
-    background-image: -webkit-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
-    background-image: -ms-linear-gradient(left bottom, rgb(93,7,117) 11%, rgb(8,0,13) 52%, rgb(0,0,0) 79%);
-
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        right top,
-        color-stop(0.11, rgb(93,7,117)),
-        color-stop(0.52, rgb(8,0,13)),
-        color-stop(0.79, rgb(0,0,0)) );
-
-}
+.panel-default > .panel-heading { background-color: #000000; }
 
 /* Override panel title */
 .panel-title { text-align: center; color: #FFFFFF; }
 
 /* Override panel body */
-.panel-body { background-color: #000000
+.panel-body { background-color: #000000; }
+
+/* Override alert info box */
+.alert-info { background-color: #121212; border-color: #FFFFFF; }
+
+/* Override alert info box text */
+.alert-info > p { color: #FFFFFF; }
+
+.imgBorder {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 4px;
+    border-color: #FFFFFF;
+
 }
