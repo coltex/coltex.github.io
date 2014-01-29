@@ -13,7 +13,7 @@ body, html { background-image: url(../img/dark_mosaic.png); }
 }
 
 #primary {  
-  background-color: #121212;
+  background-color: #4F4F4F;
 
 	);
   
@@ -23,9 +23,9 @@ body, html { background-image: url(../img/dark_mosaic.png); }
 	border-radius:10px; /* regular */
   
   /* Shadow */
-  -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,1);
-  -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,1);
-  box-shadow: 1px 1px 1px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(255,255,255,.4);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(255,255,255,.4);
+  box-shadow: 2px 2px 2px 0px rgba(255,255,255,.4);
   
   /* Padding */
   padding: 10px;
@@ -63,7 +63,7 @@ body, html { background-image: url(../img/dark_mosaic.png); }
 .panel-body { background-color: #000000; }
 
 /* Override alert info box */
-.alert-info { background-color: #121212; border-color: #FFFFFF; }
+.alert-info { background-color: #4F4F4F; border-color: #FFFFFF; }
 
 /* Override alert info box text */
 .alert-info > p { color: #FFFFFF; }
@@ -73,4 +73,13 @@ body, html { background-image: url(../img/dark_mosaic.png); }
     border-radius: 10px 10px 10px 4px;
     border-color: #FFFFFF;
 
+}
+
+.nav-pills>li.active>a {
+    background-color: #000000;
+
+}
+
+.nav-pills>li.active>a:hover {
+    background-color: #000000;
 }
